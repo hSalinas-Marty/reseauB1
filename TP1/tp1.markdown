@@ -150,3 +150,60 @@ Statistiques Ping pour 10.33.77.164:
 Durée approximative des boucles en millisecondes :
     Minimum = 5ms, Maximum = 6ms, Moyenne = 5ms
 ```
+```powershell
+PS C:\Users\hugos> ping instagram.com
+
+Envoi d’une requête 'ping' sur instagram.com [185.60.219.174] avec 32 octets de données :
+Réponse de 185.60.219.174 : octets=32 temps=9 ms TTL=55
+Réponse de 185.60.219.174 : octets=32 temps=10 ms TTL=55
+Réponse de 185.60.219.174 : octets=32 temps=10 ms TTL=55
+Réponse de 185.60.219.174 : octets=32 temps=10 ms TTL=55
+
+Statistiques Ping pour 185.60.219.174:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 9ms, Maximum = 10ms, Moyenne = 9ms
+```
+### **🌞 Faire une requête DNS à la main**
+```powershell
+PS C:\Users\hugos> nslookup www.thinkerview.com
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    www.thinkerview.com
+Addresses:  2a06:98c1:3121::7
+          2a06:98c1:3120::7
+          188.114.96.7
+          188.114.97.7
+
+PS C:\Users\hugos> nslookup www.wikileaks.org
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    wikileaks.org
+Addresses:  51.159.197.136
+          80.81.248.21
+Aliases:  www.wikileaks.org
+
+PS C:\Users\hugos> nslookup www.torproject.org
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    www.torproject.org
+Addresses:  2a01:4f9:c010:19eb::1
+          2a01:4f8:fff0:4f:266:37ff:feae:3bbc
+          2620:7:6002:0:466:39ff:fe32:e3dd
+          2620:7:6002:0:466:39ff:fe7f:1826
+          2a01:4f8:fff0:4f:266:37ff:fe2c:5d19
+          116.202.120.165
+          204.8.99.144
+          204.8.99.146
+          116.202.120.166
+          95.216.163.36
+```
+
+# III. Sniffer le réseau
+
