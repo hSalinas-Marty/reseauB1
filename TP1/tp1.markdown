@@ -210,3 +210,66 @@ Addresses:  2a01:4f9:c010:19eb::1
 ### **🌞 J'attends dans le dépôt git de rendu un fichier ping.pcap**
 
 _voir ping.pcap_
+
+### **🌞 Livrez un deuxième fichier : dns.pcap**
+
+_voir dns.pcap_
+
+# IV. Network scanning et adresses IP
+
+### **🌞 Effectue un scan du réseau auquel tu es connecté**
+
+```powershell
+PS C:\Users\hugos> nmap -sn -PR 192.168.1.0/24
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-10-06 19:48 Romance Daylight Time
+Nmap scan report for lan.home (192.168.1.1)
+Host is up (0.012s latency).
+MAC Address: 58:1D:D8:28:24:60 (Sagemcom Broadband SAS)
+Nmap scan report for 192.168.1.10
+Host is up (0.0050s latency).
+MAC Address: 58:68:7A:51:9D:C1 (Sagemcom Broadband SAS)
+Nmap scan report for iphone-victor.home (192.168.1.13)
+Host is up (0.27s latency).
+MAC Address: 9E:C9:83:C4:6F:60 (Unknown)
+Nmap scan report for repeteurwifi6-56c0.home (192.168.1.16)
+Host is up (0.0050s latency).
+MAC Address: 2C:93:FB:55:56:C0 (Sercomm France Sarl)
+Nmap scan report for pc-9.home (192.168.1.20)
+Host is up (0.26s latency).
+MAC Address: 6A:3B:B2:98:E5:C4 (Unknown)
+Nmap scan report for mini-de-bruno.home (192.168.1.21)
+Host is up (0.35s latency).
+MAC Address: 6C:96:CF:F1:C3:A6 (Apple)
+Nmap scan report for repeteurwifi6.home (192.168.1.22)
+Host is up (0.010s latency).
+MAC Address: 2C:93:FB:55:45:40 (Sercomm France Sarl)
+Nmap scan report for macbooknsempere.home (192.168.1.29)
+Host is up (0.28s latency).
+MAC Address: A4:5E:60:D2:4C:FF (Apple)
+Nmap scan report for macbook-pro-de-maylis.home (192.168.1.33)
+Host is up (0.26s latency).
+MAC Address: 10:9F:41:C6:74:4F (Apple)
+Nmap scan report for pc-de-hugo.home (192.168.1.17)
+Host is up.
+Nmap done: 256 IP addresses (10 hosts up) scanned in 18.13 seconds
+```
+
+### **🌞 Changer d'adresse IP**
+
+```powershell
+New-NetIPAddress -InterfaceAlias Wi-Fi -IPAddress 192.168.1.18 -PrefixLength 24 -DefaultGateway 192.168.1.0
+```
+```powershell 
+ipconfig
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : home
+   IPv6 Address. . . . . . . . . . . : 2a01:cb19:571:e800:c0d1:bdf4:699c:1758
+   Temporary IPv6 Address. . . . . . : 2a01:cb19:571:e800:f408:e9d7:7555:6f7e
+   Link-local IPv6 Address . . . . . : fe80::54fa:110f:881f:356f%7
+   IPv4 Address. . . . . . . . . . . : 192.168.1.18
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::5a1d:d8ff:fe28:2460%7
+                                       192.168.1.0
+```
