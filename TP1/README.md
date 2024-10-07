@@ -273,3 +273,47 @@ Wireless LAN adapter Wi-Fi:
    Default Gateway . . . . . . . . . : fe80::5a1d:d8ff:fe28:2460%7
                                        192.168.1.0
 ```
+
+### **🌞 Sur le PC serveur**
+
+```powershell
+PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe -l -p 7777
+cc
+hoo
+Tous va bien ?
+ouiii
+```
+
+```powershell
+PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe 10.10.10.10 7777
+hugo
+c moi
+yooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Tes sur ?
+non
+```
+
+### **🌞 Sur le PC serveur toujours**
+
+```powershell
+TCP    10.10.10.54:139        0.0.0.0:0              LISTENING
+ Can not obtain ownership information
+```
+
+### **🌞 Sur le PC client**
+
+```powershell
+PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe 10.10.10.10 8888
+```
+
+### **🌞 Echangez-vous des messages**
+
+```powershell
+hello
+yo bonjour
+non
+```
+
+### **🌞 Utilisez une commande qui permet de voir la connexion en cours**
+
