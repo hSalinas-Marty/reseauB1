@@ -58,26 +58,6 @@ _voir ping.pcap_
 
 # II. Utilisation des ports
 
-### **🌞 Changer d'adresse IP**
-
-```powershell
-New-NetIPAddress -InterfaceAlias Wi-Fi -IPAddress 192.168.1.18 -PrefixLength 24 -DefaultGateway 192.168.1.0
-```
-```powershell 
-ipconfig
-
-Wireless LAN adapter Wi-Fi:
-
-   Connection-specific DNS Suffix  . : home
-   IPv6 Address. . . . . . . . . . . : 2a01:cb19:571:e800:c0d1:bdf4:699c:1758
-   Temporary IPv6 Address. . . . . . : 2a01:cb19:571:e800:f408:e9d7:7555:6f7e
-   Link-local IPv6 Address . . . . . : fe80::54fa:110f:881f:356f%7
-   IPv4 Address. . . . . . . . . . . : 192.168.1.18
-   Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : fe80::5a1d:d8ff:fe28:2460%7
-                                       192.168.1.0
-```
-
 ### **🌞 Sur le PC serveur**
 
 ```powershell
