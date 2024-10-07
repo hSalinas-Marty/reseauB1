@@ -124,13 +124,24 @@ _voir http.pcap_
 
 Spotify (service1.pcap) : 
 ```powershell
- UDP    0.0.0.0:50115          216.58.214.65:443
+TCP    10.33.77.208:56490     199.232.210.250:443    ESTABLISHED
  [Spotify.exe]
  ```
 
 Discord (service2.pcap) :
 ```powershell
- UDP    0.0.0.0:56223          35.186.224.24:443
+TCP    10.33.77.208:56162     162.159.135.234:443    ESTABLISHED
  [Discord.exe]
 ```
 
+Word (service3.pcap) :
+```powershell
+TCP    192.168.1.17:52775     104.85.28.254:443      ESTABLISHED
+ [WINWORD.EXE]
+```
+
+Epic Games (service4.pcap) :
+```powershell
+TCP    192.168.1.17:52930     18.232.239.118:443     ESTABLISHED
+ [EpicGamesLauncher.exe]
+```
