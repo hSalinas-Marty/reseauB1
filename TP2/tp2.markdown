@@ -51,3 +51,10 @@ Ping statistics for 10.10.10.10:
 Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 0ms, Average = 0ms
 ```
+
+### **🌞 Capture de ping**
+
+_voir ping.pcap_
+
+# II. Utilisation des ports
+
