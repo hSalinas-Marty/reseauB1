@@ -121,6 +121,7 @@ _voir http.pcap_
 
 ### **2. Autres services**
 
+### **🌞 Pour les 5 applications**
 
 Spotify (service1.pcap) : 
 ```powershell
@@ -144,4 +145,10 @@ Epic Games (service4.pcap) :
 ```powershell
 TCP    192.168.1.17:52930     18.232.239.118:443     ESTABLISHED
  [EpicGamesLauncher.exe]
+```
+
+Valorant (service5.pcap) :
+```powershell
+ TCP    192.168.1.17:17393     172.65.252.238:5223    ESTABLISHED
+ [RiotClientServices.exe]
 ```
