@@ -58,33 +58,6 @@ _voir ping.pcap_
 
 # II. Utilisation des ports
 
-### **🌞 Sur le PC serveur**
-
-```powershell
-PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe -l -p 7777
-cc
-hoo
-Tous va bien ?
-ouiii
-```
-
-```powershell
-PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe 10.10.10.10 7777
-hugo
-c moi
-yooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-Tes sur ?
-non
-```
-
-### **🌞 Sur le PC serveur toujours**
-
-```powershell
-TCP    10.10.10.54:139        0.0.0.0:0              LISTENING
- Can not obtain ownership information
-```
-
 ### **🌞 Sur le PC client**
 
 ```powershell
@@ -101,3 +74,41 @@ non
 
 ### **🌞 Utilisez une commande qui permet de voir la connexion en cours**
 
+```powershell
+TCP    10.10.10.54:6611       10.10.10.10:8888       ESTABLISHED
+ [nc.exe]
+ ```
+
+### **🌞 Faites une capture Wireshark complète d'un échange**
+
+_voir netcat1.pcap_
+
+### **🌞 Inversez les rôles**
+
+### **🌞 Sur le PC serveur**
+
+```powershell
+PS C:\Users\hugos\Downloads\netcat-win32-1.11\netcat-1.11> .\nc.exe -l -p 7777
+cc
+hoo
+Tous va bien ?
+ouiii
+```
+
+### **🌞 Sur le PC serveur toujours**
+
+```powershell
+TCP    10.10.10.54:139        0.0.0.0:0              LISTENING
+ Can not obtain ownership information
+```
+
+### **🌞 Utilisez une commande qui permet de voir la connexion en cours**
+
+```powershell
+TCP    10.10.10.54:7777       10.10.10.10:4763       ESTABLISHED
+ [nc.exe]
+ ```
+
+### **🌞 Faites une capture Wireshark complète d'un échange**
+
+_voir netcat2.pcap_
