@@ -112,3 +112,25 @@ TCP    10.10.10.54:7777       10.10.10.10:4763       ESTABLISHED
 ### **🌞 Faites une capture Wireshark complète d'un échange**
 
 _voir netcat2.pcap_
+
+# III. Analyse de vos applications usuelles
+
+### **1. Serveur web**
+
+_voir http.pcap_
+
+### **2. Autres services**
+
+
+Spotify (service1.pcap) : 
+```powershell
+ UDP    0.0.0.0:50115          216.58.214.65:443
+ [Spotify.exe]
+ ```
+
+Discord (service2.pcap) :
+```powershell
+ UDP    0.0.0.0:56223          35.186.224.24:443
+ [Discord.exe]
+```
+
