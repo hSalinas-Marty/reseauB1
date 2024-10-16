@@ -274,6 +274,15 @@ lease 10.5.1.137 {
   client-hostname "client3";
 }
 ```
+```powershell
+matheo@client3:~$ ip a
+2: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:9d:f6:3e brd ff:ff:ff:ff:ff:ff
+    inet 10.5.1.137/24 brd 10.5.1.255 scope global dynamic noprefixroute enp0s8
+       valid_lft 43004sec preferred_lft 43004sec
+    inet6 fe80::a00:27ff:fe9d:f63e/64 scope link
+       valid_lft forever preferred_lft forever
+```
 
 
 
